@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "north-admin-testapp"
+version = "0.0.1"
+description = "Test application for NorthAdmin"
+authors = ["anton <tuulienenkeli@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+fastapi = "^0.104.1"
+asyncpg = "^0.29.0"
+sqlalchemy = "^2.0.23"
+north-admin = "^0.1.2"
+ruff = "^0.1.6"
+pydantic-settings = "^2.1.0"
+alembic = "^1.12.1"
+loguru = "^0.7.2"
+psycopg = "^3.1.13"
+fastapi-pagination = "^0.12.12"
+uvicorn = "^0.24.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
