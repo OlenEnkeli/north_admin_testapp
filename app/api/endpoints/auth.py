@@ -67,7 +67,7 @@ async def update_current_user(
     if not user:
         raise HTTPException(
             status_code=400,
-            detail='Can`t update user'
+            detail='Can`t update user',
         )
 
     return user
@@ -93,9 +93,8 @@ async def login(
         raise HTTPException(
             status_code=401,
             detail={
-                'Unauthorized': 'wrong email or password'
+                'Unauthorized': 'wrong email or password',
             },
         )
 
     return create_jwt_tokens(user_id=user.id)
-

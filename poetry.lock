@@ -396,18 +396,19 @@ files = [
 
 [[package]]
 name = "north-admin"
-version = "0.1.2"
+version = "0.1.4"
 description = "Easy-to-setup PWA Admin Panel solution based on FastAPI, async SQLAlchemy and pre-render Swelte UI"
 optional = false
 python-versions = ">=3.11"
 files = [
-    {file = "north_admin-0.1.2-py3-none-any.whl", hash = "sha256:2f7de073990a397340c3799462f0f910d36483d2fddb3f74595771e1ef5fec40"},
-    {file = "north_admin-0.1.2.tar.gz", hash = "sha256:b6ff5a275067a0b5d7607c15a87a2556db87e1d3b3abf9609ec6366a32bbc3dc"},
+    {file = "north_admin-0.1.4-py3-none-any.whl", hash = "sha256:76f75472eab52c65ac96d554681818c93b5b17e23adfc84b4b8801a4663ec5b3"},
+    {file = "north_admin-0.1.4.tar.gz", hash = "sha256:6aad61c9640672e625a66cad48aed9424232d78eb06444a5609bd36153ca4c7a"},
 ]
 
 [package.dependencies]
 fastapi = ">=0.104.1,<0.105.0"
 greenlet = ">=3.0.1,<4.0.0"
+loguru = ">=0.7.2,<0.8.0"
 pyjwt = ">=2.8.0,<3.0.0"
 python-multipart = ">=0.0.6,<0.0.7"
 random-unicode-emoji = ">=2.8,<3.0"

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "north-admin-testapp"
+name = "app"
 version = "0.0.1"
 description = "Test application for NorthAdmin"
 authors = ["anton <tuulienenkeli@gmail.com>"]

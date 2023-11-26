@@ -23,6 +23,7 @@ class UserLoginSchema(BaseSchema):
 
 
 class UserReturnSchema(BaseSchema):
+    id: int
     email: str
     fullname: str
     is_active: bool
