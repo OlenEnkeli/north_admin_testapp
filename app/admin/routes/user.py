@@ -16,6 +16,7 @@ user_get_columns = [
     User.id,
     User.email,
     User.fullname,
+    User.is_active,
     User.user_type,
     User.created_at,
 ]
@@ -33,6 +34,7 @@ router = AdminRouter(
     soft_delete_column=User.is_active,
     get_columns=user_get_columns,
     list_columns=user_get_columns,
+    sortable_columns=[User.id, User.email],
     filters=[
         FilterGroup(
             query=(
